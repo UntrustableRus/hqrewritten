@@ -14,8 +14,47 @@
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
     />
+    
+    <!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/prism.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.min.js"></script>
+    <script>
+      var app = new Vue({
+  el: "#app",
+  vuetify: new Vuetify({
+    theme: {
+      dark: true
+    }
+  })
+});
+    </script>
+     <!-- Styles -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" />
+      <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet" />
+      <link href="./ui.css" rel="stylesheet" />
+      <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet" />
   </head>
   <body>
-    Coming Soon :)
+       <div id="app">
+      <v-app>
+            <v-container fluid>
+               <v-row dense>
+                  <v-col cols="12">
+                     <v-card class="gamecard">
+                        <v-card-title class="headline text-center">title </v-card-title>
+                        <v-card-text>
+                           test
+                        </v-card-text>
+                     </v-card>
+                  </v-col>
+               </v-row>
+            </v-container>
+      </v-app>
+   </div>
+           
   </body>
 </html>
